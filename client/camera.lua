@@ -149,7 +149,7 @@ end)
 
 CreateThread(function()
 	while true do
-		if PlayerJob.name == "reporter" then
+		if PlayerJob.name == "reporter" or PlayerJob.name == "rockfordrecords" then
 			if holdingCam then
 				while not HasAnimDictLoaded(camanimDict) do
 					RequestAnimDict(camanimDict)
@@ -184,7 +184,7 @@ CreateThread(function()
 	while true do
 		local lPed = PlayerPedId()
 		local vehicle = GetVehiclePedIsIn(lPed)
-		if PlayerJob.name == "reporter" then
+		if PlayerJob.name == "reporter" or PlayerJob.name == "rockfordrecords" then
 			if holdingCam then
 				if IsControlJustReleased(1, 244) then
 					movcamera = true
@@ -266,7 +266,7 @@ CreateThread(function()
 		local lPed = PlayerPedId()
 		local vehicle = GetVehiclePedIsIn(lPed)
 
-		if PlayerJob.name == "reporter" then
+		if PlayerJob.name == "reporter" or PlayerJob.name == "rockfordrecords" then
 			if holdingCam then
 				if IsControlJustReleased(1, 38) then
 					newscamera = true
@@ -374,7 +374,7 @@ end)
 
 CreateThread(function()
 	while true do
-		if PlayerJob.name == "reporter" then
+		if PlayerJob.name == "reporter" or PlayerJob.name == "rockfordrecords" then
 			if holdingBmic then
 				while not HasAnimDictLoaded(bmicanimDict) do
 					RequestAnimDict(bmicanimDict)

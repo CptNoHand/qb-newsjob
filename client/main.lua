@@ -144,7 +144,7 @@ CreateThread(function()
         if LocalPlayer.state.isLoggedIn then
             local inRange = false
             local pos = GetEntityCoords(PlayerPedId())
-            if PlayerJob.name == "reporter" then
+            if PlayerJob.name == "reporter" or PlayerJob.name == "rockfordrecords" then
                 if #(pos - vector3(Config.Locations["vehicle"].coords.x, Config.Locations["vehicle"].coords.y, Config.Locations["vehicle"].coords.z)) < 10.0 then
                     inRange = true
                     DrawMarker(2, Config.Locations["vehicle"].coords.x, Config.Locations["vehicle"].coords.y, Config.Locations["vehicle"].coords.z, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.2, 0.15, 200, 200, 200, 222, false, false, false, true, false, false, false)
