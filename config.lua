@@ -3,7 +3,7 @@ Config = {}
 Config.Locations = {
     ["main"] = {
         label = "Weazle News HQ",
-        coords = vector4(-597.89, -929.95, 24.0, 271.5),
+        coords = vector4(479.07, -106.73, 63.16, 340.64),
     },
     ["inside"] = {
         label = "Weazle News HQ Inside",
@@ -11,15 +11,15 @@ Config.Locations = {
     },
     ["outside"] = {
         label = "Weazle News HQ Outside",
-        coords = vector4(-598.25, -929.86, 23.86, 86.5),
+        coords = vector4(479.06, -106.7, 63.16, 163.48),
     },
     ["vehicle"] = {
         label = "Vehicle Storage",
-        coords = vector4(-552.24, -925.61, 23.86, 242.5),
+        coords = vector4(500.53, -105.04, 62.02, 243.0),
     },
     ["heli"] = {
 		label = "Helicopter Storage",
-		coords = vector4(-583.08, -930.55, 36.83, 89.26),
+		coords = vector4(462.64, -126.13, 62.32, 161.89),
 	}
 }
 
